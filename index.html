@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./images/favicon-32x32.png"
+    />
     <title>QRCode</title>
-</head>
-<body>
-    
-<section class="MainSection">
+  </head>
+  <body>
+    <section class="MainSection">
+      <div class="Content">
+        <div class="imagebackground">
+          <img src="./images/MyGitHubLinkQRCode.png" alt="" />
+        </div>
 
-<div class="Content">
+        <div class="mainContent">
+          <h2>Create Your QR code For Free</h2>
+          <p>
+            Enter your URL below to generate a QR Code and download the image.
+          </p>
 
+          <form id="generate_form">
+            <input type="url" id="url" placeholder="Enter a URL" />
 
-   
-        <img src="./images/image-qr-code.png" alt="">
+            <select id="size">
+              <option value="100">100x100</option>
 
+              <option value="200">200x200</option>
+              <option value="300">300x300</option>
+              <option value="400">400x400</option>
+              <option value="500" selected>500x500</option>
+              <option value="600">600x600</option>
+              <option value="700">700x700</option>
+            </select>
 
-    <h2>Improve your front-end skills by building projects</h2>
-    <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.
-    </p>
+            <button type="submit"><span> Generate QR code</span></button>
+          </form>
 
-</div>
+          <button class="download_button"><span>Download</span></button>
 
-
-
-
-
-</section>
-
-</body>
+          <span class="gitHub_Link"
+            >Made with &hearts; by
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Elmountahiii"
+            >
+              ElMountahiii
+            </a></span
+          >
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
