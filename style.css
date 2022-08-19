@@ -85,7 +85,7 @@ h4 {
 }
 
 
-.hello {}
+
 
 
 
@@ -109,6 +109,25 @@ button {
 
 }
 
+.download_button {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #59CE8F;
+    color: white;
+    border: 2px solid #59CE8F;
+    margin: 0;
+    font-weight: 700;
+}
+
+.download_button:hover {
+
+    cursor: pointer;
+}
+
 button:hover {
     background-color: #2C7DFA;
     color: white;
@@ -117,22 +136,7 @@ button:hover {
 
 }
 
-.download_button {
 
-    background-color: #59CE8F;
-    color: white;
-    border: 2px solid #59CE8F;
-    margin: 0;
-}
-
-.download_button:hover {
-    background-color: #59CE8F;
-    color: white;
-
-    border: 2px solid #59CE8F;
-
-
-}
 
 .QrCode {
 

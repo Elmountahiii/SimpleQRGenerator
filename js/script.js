@@ -4,6 +4,9 @@ const QrCodeBox=document.getElementById("QRCodeBox");
 
 
 
+
+
+
 const GenerateQRCode =(url)=>{
  
 
@@ -19,6 +22,8 @@ const GenerateQRCode =(url)=>{
             colorLight : "#2C7DFA",
            
         });
+
+       
     }else{
 
         var qrcode = new QRCode(QrCodeBox, {
@@ -56,7 +61,16 @@ const OnGenerateSubmit= (event)=>{
 
 const OnDownloadButtonClick= ()=>{
 
-    console.log("Download");
+
+    var QrImageURL=QrCodeBox.querySelector('img').src;
+
+
+    downloadButton.href = QrImageURL;
+    downloadButton.download = 'qrcode';
+
+
+    
+
 }
 
 
