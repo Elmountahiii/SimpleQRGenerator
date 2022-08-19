@@ -10,14 +10,21 @@
       type="image/jpg"
       href="./images/favicon-32x32.png"
     />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/script.js" defer></script>
     <title>QRCode</title>
   </head>
   <body>
     <section class="MainSection">
       <div class="Content">
-        <div class="imagebackground">
-          <img src="./images/MyGitHubLinkQRCode.png" alt="" />
-        </div>
+        <div id="QRCodeBox" class="QrCode"></div>
 
         <div class="mainContent">
           <h2>Create Your QR code For Free</h2>
@@ -28,21 +35,12 @@
           <form id="generate_form">
             <input type="url" id="url" placeholder="Enter a URL" />
 
-            <select id="size">
-              <option value="100">100x100</option>
-
-              <option value="200">200x200</option>
-              <option value="300">300x300</option>
-              <option value="400">400x400</option>
-              <option value="500" selected>500x500</option>
-              <option value="600">600x600</option>
-              <option value="700">700x700</option>
-            </select>
-
             <button type="submit"><span> Generate QR code</span></button>
           </form>
 
-          <button class="download_button"><span>Download</span></button>
+          <button id="downloadButton" class="download_button">
+            <span>Download</span>
+          </button>
 
           <span class="gitHub_Link"
             >Made with &hearts; by
