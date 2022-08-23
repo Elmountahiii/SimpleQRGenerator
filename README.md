@@ -11,7 +11,7 @@ A simple vanilla JavaScript website that generator qr code
  
 ## Screenshots
 
-![App Screenshot](https://resitish.sirv.com/GitHub%20ReadMe/Site%20Screenshot.png)
+![App Screenshot](https://elmountahiii.sirv.com/GitHub%20ReadMe/Site%20Screenshot.png)
 
 
 ## License
